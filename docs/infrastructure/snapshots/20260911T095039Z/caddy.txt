@@ -1,0 +1,3 @@
+$ systemctl status caddy --no-pager
+
+Unit caddy.service could not be found.

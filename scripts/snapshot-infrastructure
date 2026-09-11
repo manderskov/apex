@@ -1,0 +1,30 @@
+#!/bin/sh
+# Reviewed, read-only runtime snapshot for Apex.
+set -eu
+
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+output=${1:-"$root/docs/infrastructure/snapshots/$(date -u +%Y%m%dT%H%M%SZ)"}
+mkdir -p "$output"
+
+run() {
+    name=$1
+    shift
+    {
+        printf '$'
+        printf ' %s' "$@"
+        printf '\n\n'
+        "$@" 2>&1 || true
+    } >"$output/$name.txt"
+}
+
+run host uname -a
+run os cat /etc/os-release
+run identity hostname
+run addresses ip -brief address
+run routes ip route
+run listeners ss -ltnup
+run services systemctl list-units --type=service --state=running --no-pager
+run containers docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}'
+run caddy systemctl status caddy --no-pager
+
+printf '%s\n' "$output"

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "apex": {
+      "permission": {
+        "task": {
+          "*": "deny",
+          "explore": "allow"
+        },
+        "skill": {
+          "*": "deny",
+          "apex-infrastructure": "allow",
+          "apex-projects": "allow"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$ ip -brief address
+
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp6s0           UP             192.168.86.201/24 metric 100 fdcb:e163:d068:9663:5054:ff:fe2a:43c2/64 fe80::5054:ff:fe2a:43c2/64 
+br-d4c2804cb3ea  UP             10.0.3.1/24 fe80::14bf:9ff:fe8c:27ef/64 
+br-1162946632e4  DOWN           10.0.1.1/24 
+br-347a450c1fc4  DOWN           10.0.2.1/24 
+br-a0251a83da0c  UP             10.0.5.1/24 fe80::2074:6aff:fe3e:ab1c/64 
+br-b283067d7809  UP             10.0.6.1/24 fe80::2008:1dff:feda:2cb/64 
+docker0          DOWN           10.0.0.1/24 
+vethafbcd2b@if2  UP             fe80::dc88:7cff:fe25:e299/64 
+veth0fab89d@if2  UP             fe80::6cd4:b7ff:fef1:ba9d/64 
+veth8e7fc57@if2  UP             fe80::e0d1:feff:fe9f:53bb/64 
+veth7efaaf1@if2  UP             fe80::b815:8eff:fe19:48d0/64 

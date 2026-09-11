@@ -1,0 +1,13 @@
+# Secrets and local-only configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Local editor and OS files
+.DS_Store
+.vscode/
+.idea/

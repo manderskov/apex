@@ -1,0 +1,8 @@
+$ docker ps --format table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}
+
+NAMES                             IMAGE                           PORTS                                         STATUS
+euai-pii-production-screening-1   euai-pii-production-screening   0.0.0.0:6210->8080/tcp                        Up 50 minutes (healthy)
+euai-pii-test-screening-1         euai-pii-test-screening         0.0.0.0:6110->8080/tcp                        Up 50 minutes (healthy)
+caddy-caddy-1                     caddy:alpine                                                                  Up 50 minutes
+xdb-xdb-scanner-1                 xdb-xdb-scanner                 3000/tcp                                      Up 50 minutes
+xdb-xdb-api-1                     xdb-xdb-api                     0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   Up 50 minutes (healthy)

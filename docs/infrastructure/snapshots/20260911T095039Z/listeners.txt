@@ -1,0 +1,24 @@
+$ ss -ltnup
+
+Netid State  Recv-Q Send-Q         Local Address:Port  Peer Address:PortProcess                                    
+udp   UNCONN 0      0                 127.0.0.54:53         0.0.0.0:*                                              
+udp   UNCONN 0      0              127.0.0.53%lo:53         0.0.0.0:*                                              
+udp   UNCONN 0      0      192.168.86.201%enp6s0:68         0.0.0.0:*                                              
+udp   UNCONN 0      0                          *:443              *:*                                              
+tcp   LISTEN 0      128                127.0.0.1:34489      0.0.0.0:*    users:(("code-645f29cc31",pid=9026,fd=9)) 
+tcp   LISTEN 0      4096               127.0.0.1:2019       0.0.0.0:*                                              
+tcp   LISTEN 0      511                127.0.0.1:32985      0.0.0.0:*    users:(("MainThread",pid=9602,fd=32))     
+tcp   LISTEN 0      4096           127.0.0.53%lo:53         0.0.0.0:*                                              
+tcp   LISTEN 0      4096                 0.0.0.0:6210       0.0.0.0:*                                              
+tcp   LISTEN 0      4096                 0.0.0.0:3000       0.0.0.0:*                                              
+tcp   LISTEN 0      511                  0.0.0.0:5174       0.0.0.0:*    users:(("MainThread",pid=19404,fd=24))    
+tcp   LISTEN 0      511                  0.0.0.0:5173       0.0.0.0:*    users:(("MainThread",pid=16308,fd=21))    
+tcp   LISTEN 0      4096                 0.0.0.0:6110       0.0.0.0:*                                              
+tcp   LISTEN 0      4096              127.0.0.54:53         0.0.0.0:*                                              
+tcp   LISTEN 0      4096                 0.0.0.0:22         0.0.0.0:*                                              
+tcp   LISTEN 0      511                  0.0.0.0:4173       0.0.0.0:*    users:(("MainThread",pid=8213,fd=22))     
+tcp   LISTEN 0      128                127.0.0.1:43633      0.0.0.0:*    users:(("code-645f29cc31",pid=9086,fd=11))
+tcp   LISTEN 0      4096                    [::]:3000          [::]:*                                              
+tcp   LISTEN 0      4096                       *:443              *:*                                              
+tcp   LISTEN 0      4096                    [::]:22            [::]:*                                              
+tcp   LISTEN 0      4096                       *:80               *:*                                              
