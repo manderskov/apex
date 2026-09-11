@@ -5,7 +5,7 @@ follow-up. Keep entries concise, dated, and free of secrets.
 
 ## Active work
 
-_No active work recorded yet._
+- 2026-09-11: Establish the infrastructure required to run `~/code/euai-api/` on Apex. Move dependencies from `prime.lan` to Apex over time, making the full application and infrastructure reproducible on Apex when needed. Establish components and make architecture decisions incrementally with the user. No infrastructure or application changes authorized by this plan alone.
 
 ## Project status
 
